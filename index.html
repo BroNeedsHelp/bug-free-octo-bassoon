@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Sonic Battle</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .game-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #5a5a5a;
+        }
+
+        /* Responsive styling for the iframe */
+        .iframe-container {
+            overflow: hidden;
+            padding-top: 75%; /* 450 / 600 = 0.75, so 75% for 4:3 aspect ratio */
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .iframe-container iframe {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Sonic Battle (GBA)</h1>
+        <p>Enjoy this classic game embedded below!</p>
+        <div class="iframe-container">
+            <iframe
+                src="https://www.retrogames.cc/embed/27905-sonic-battle-e-independent.html"
+                width="600"
+                height="450"
+                frameborder="no"
+                allowfullscreen="true"
+                webkitallowfullscreen="true"
+                mozallowfullscreen="true"
+                scrolling="no">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
